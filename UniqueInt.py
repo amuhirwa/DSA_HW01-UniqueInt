@@ -84,13 +84,6 @@ class UniqueInt:
                 right.append(i)
         return UniqueInt.custom_sort(left) + [pivot] + UniqueInt.custom_sort(right)
 
-    # AllNumbers = {}
-    # allstrings = []
-    # for i in range(-1203, 1204):
-    #         num = int_to_str(i)
-    #         AllNumbers[num] = i
-    #         allstrings.append(num)
-
     @staticmethod
     def processFile(input_file, output_file):
         """
