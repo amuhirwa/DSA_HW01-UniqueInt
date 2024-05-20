@@ -79,4 +79,4 @@ Reads integers from `input_file`, processes them to remove duplicates, sorts the
 ## Notes
 - The input file should contain one integer per line.
 - The integers must be in the range of -1023 to 1023.
-- The script ignores lines that do not represent valid integers.
+- The script ignores lines that do not represent valid integers or satisfy those conditions above.
