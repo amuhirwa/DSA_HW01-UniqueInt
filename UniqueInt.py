@@ -84,6 +84,13 @@ class UniqueInt:
                 right.append(i)
         return UniqueInt.custom_sort(left) + [pivot] + UniqueInt.custom_sort(right)
 
+    # AllNumbers = {}
+    # allstrings = []
+    # for i in range(-1203, 1204):
+    #         num = int_to_str(i)
+    #         AllNumbers[num] = i
+    #         allstrings.append(num)
+
     @staticmethod
     def processFile(input_file, output_file):
         """
@@ -108,10 +115,7 @@ class UniqueInt:
 
         with open(output_file, 'w') as f:
             for index, i in enumerate(UniqueInt.custom_sort(unique_ints)):
-                if index == len(unique_ints) - 1:
-                    f.write(UniqueInt.int_to_str(i))
-                else:
-                    f.write(UniqueInt.int_to_str(i) + '\n')
+                f.write(UniqueInt.int_to_str(i) + '\n')
 
 
 if __name__ == "__main__":
